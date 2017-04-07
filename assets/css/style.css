@@ -89,7 +89,9 @@ a{
 .titulo-secundario{
 	font-size: 30px;
 }
-
+.sub-titulo{
+	font-size: 20px;
+}
 .listado-noticias
 {
 	padding-left: 0;
@@ -158,7 +160,17 @@ a{
 	float:left !important;
 	min-height: 550px;
 }
+.listado-noticias-categoria img
+{
+	width: 100%;
+}
+.noticia-categoria {
+	clear: both;
+}
 
+.noticia-categoria .sub-titulo a{
+	font-weight: bold;
+}
 
 /**
  *
