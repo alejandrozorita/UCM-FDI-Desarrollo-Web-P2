@@ -5,7 +5,7 @@
 	<meta name="language" content="Spanish">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Periódico dígital ByteCode</title>
-	<link rel="stylesheet" href="../assets/css/style.css">
+	<link rel="stylesheet" href="css//style.css">
 </head>
 <body>
 	
@@ -16,7 +16,7 @@
 		<div class="contenedor">
 			<!-- Sección dedicada al título de la página -->
 			<div class="columna col-4 titulo-cabecera">
-				<img src="../assets/img/bytecode-logo.png" alt="logotipo-bytecode"><br>
+				<img src="img/bytecode-logo.png" alt="logotipo-bytecode"><br>
 				<h1>Periódico dígital ByteCode</h1>
 			</div>
 			<div class="columna col-8 logotipo">
@@ -24,8 +24,8 @@
 		          	<ul class="menu-cabecera float-right">
 			            <li><a href="index.html">Home</a></li>
 			            <li><a href="autor.html">Autor</a></li>
-			            <li class="active"><a href="noticia-editar.html">Editar noticia</a></li>
-						<li><a href="noticia-crear.html">Crear noticia</a></li>
+			            <li><a href="noticia-editar.html">Editar noticia</a></li>
+						<li class="active"><a href="noticia-crear.html">Crear noticia</a></li>
 			            <li><a href="login.html">Logout</a></li>
 		          	</ul>
 		        </nav>
@@ -39,7 +39,7 @@
 
 			<!-- Administrador -->
 			<div class="col-12">
-				<div class="titulo-secundario">Editar Noticia <a href="noticia-crear.html" class="boton boton float-right">Crear nueva</a></div>
+				<div class="titulo-secundario">Crear Noticia</div>
 				<hr>
 			</div>
 	
@@ -48,14 +48,14 @@
 			</div>
 			<!-- Mostramos el autor con su imagen -->
 			<div class="col-6">
-				<form class="form-login editar-noticia">
+				<form class="form-login crear-noticia">
 					<div class="caja-minuatura">
 						<!-- La imagen no levara file ya que se cambiara desde la propia imagen  -->
 						<div class="caja-autor">
-							<input type="text" name="titulo-noticia" class="form-inputs" value="Título de la noticia" placeholder="Título de la noticia">
+							<input type="text" name="titulo-noticia" class="form-inputs" value="" placeholder="Título de la noticia">
 						</div>
 						<input type="file" name="imagen-noticia" class="form-inputs">
-				      	<img src="../assets/img/slider1.jpg" alt="imagen-noticia">
+				      	<img src="img/noticia.png" alt="imagen-noticia">
 				      	<div class="caja-autor">
 				        	<textarea name="conteindo-noticia" class="form-inputs" cols="30" rows="10" placeholder="Conteido de la noticia"></textarea>
 				        	<select name="categoria_id" class="form-inputs">
