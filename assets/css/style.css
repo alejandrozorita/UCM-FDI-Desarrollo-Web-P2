@@ -1,6 +1,6 @@
 /**
- * [sizing GENERAL]
- * @type {[type]}
+ * GENERAL
+ * 
  *
  */
 
@@ -30,6 +30,27 @@ a{
 	text-decoration: none;
 }
 
+.boton {
+	display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
 /**
  *
  *
@@ -197,6 +218,53 @@ a{
 }
 
 
+
+/**
+ *
+ *
+ *
+ * LOGIN
+ * 
+ */
+.contenedor-login {
+	width: 100%;
+}
+.form-login {
+	max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.formateo-inputs
+{
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.form-login .form-inputs {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.contenedor-login .form-inputs{
+	width: 100%;
+}
+.boton-login{
+	margin-top: 10px;
+    color: #fff;
+    background-color:  rgb(9, 87, 168);
+    border-color: #2e6da4;
+	width: 49%;
+}
 
 
 /**
