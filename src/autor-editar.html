@@ -23,9 +23,9 @@
 				<nav>
 		          	<ul class="menu-cabecera float-right">
 			            <li><a href="index.html">Home</a></li>
-			            <li class="active"><a href="autor.html">Autor</a></li>
-			            <li><a href="noticia-editar.html">Editar noticia</a></li>
-						<li><a href="noticia-crear.html">Crear noticia</a></li>
+			            <li><a href="autor-nuevo.html">Nuevo Autor</a></li>
+			            <li class="active"><a href="autor-editar.html">Editar Autor</a></li>
+			            <li><a href="administrador.html">Administrador</a></li>
 			            <li><a href="login.html">Logout</a></li>
 		          	</ul>
 		        </nav>
@@ -37,9 +37,34 @@
 		<!-- Sección dedicada al cuerpo de la página -->
 		<div class="contenido m-t-40">
 
-			<!-- Noticias escritas por el autor -->
+			<!-- Administrador -->
 			<div class="col-12">
-				<div class="titulo-secundario">Mis noticias <a href="noticia-crear.html" class="boton boton float-right">Nueva noticia</a></div>
+				<div class="titulo-secundario">Editar Autor <a href="autor-nuevo.html" class="boton boton float-right">Crear Autor</a></div>
+				<hr>
+			</div>
+	
+			<!-- Mostramos el autor con su imagen -->
+			<div class="col-3">
+			</div>
+			<!-- Mostramos el autor con su imagen -->
+			<div class="col-5">
+				<form class="form-login">
+					<div class="caja-minuatura">
+						<!-- La imagen no levara file ya que se cambiara desde la propia imagen  -->
+						<input type="file" name="imagen-usuario" class="form-inputs">
+				      	<img src="../assets/img/noticia.png" alt="imagen-noticia">
+				      	<div class="caja-autor">
+				        	<input type="text" name="nombre-autor" class="form-inputs" value="Nombre del Autor" placeholder="Nombre del autor">
+				        	<a href="" class="boton boton-login">Editar Autor</a>
+				        	<a href="" class="boton boton-login boton-alerta">Borrar Autor</a>
+				      	</div>
+				    </div>
+			    </form>
+			</div>
+
+			<!-- Noticias -->
+			<div class="col-12">
+				<div class="titulo-secundario">Noticias escritas por el autor</div>
 				<hr>
 			</div>
 	
@@ -51,8 +76,6 @@
 			        <h3>Título de la noticia 1</h3>
 			        <p>Extracto de la noticia. La puede leer a continuación.
 			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
 			      </div>
 			    </div>
 			</div>
@@ -64,8 +87,6 @@
 			        <h3>Título de la noticia 2</h3>
 			        <p>Extracto de la noticia. La puede leer a continuación.
 			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
 			      </div>
 			    </div>
 			</div>
@@ -78,8 +99,6 @@
 			        <h3>Título de la noticia 3</h3>
 			        <p>Extracto de la noticia. La puede leer a continuación.
 			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
 			      </div>
 			    </div>
 			</div>
@@ -93,64 +112,6 @@
 			        <h3>Título de la noticia 4</h3>
 			        <p>Extracto de la noticia. La puede leer a continuación.
 			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
-			      </div>
-			    </div>
-			</div>
-
-			<!-- Noticias del autor -->
-			<div class="col-3">
-				<div class="caja-minuatura">
-			      <img src="../assets/img/noticia.png" alt="imagen-noticia">
-			      <div class="extracto-noticia">
-			        <h3>Título de la noticia 1</h3>
-			        <p>Extracto de la noticia. La puede leer a continuación.
-			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
-			      </div>
-			    </div>
-			</div>
-			<!-- Noticias del autor -->
-			<div class="col-3">
-				<div class="caja-minuatura">
-			      <img src="../assets/img/noticia.png" alt="imagen-noticia">
-			      <div class="extracto-noticia">
-			        <h3>Título de la noticia 2</h3>
-			        <p>Extracto de la noticia. La puede leer a continuación.
-			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
-			      </div>
-			    </div>
-			</div>
-
-			<!-- Noticias del autor -->
-			<div class="col-3">
-				<div class="caja-minuatura">
-			      <img src="../assets/img/noticia.png" alt="imagen-noticia">
-			      <div class="extracto-noticia">
-			        <h3>Título de la noticia 3</h3>
-			        <p>Extracto de la noticia. La puede leer a continuación.
-			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
-			      </div>
-			    </div>
-			</div>
-
-
-			<!-- Noticias del autor -->
-			<div class="col-3">
-				<div class="caja-minuatura">
-			      <img src="../assets/img/noticia.png" alt="imagen-noticia">
-			      <div class="extracto-noticia">
-			        <h3>Título de la noticia 4</h3>
-			        <p>Extracto de la noticia. La puede leer a continuación.
-			        Extracto de la noticia. La puede leer a continuación</p>
-			        <a href="" class="boton boton-alerta">Borrar noticia</a>
-			        <a href="noticia-editar.html" class="boton boton-login">Editar</a>
 			      </div>
 			    </div>
 			</div>

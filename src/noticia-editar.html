@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="language" content="Spanish">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Periódico dígital ByteCode</title>
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+	
+	<!-- Contenedor pincipal para el contenido de la página -->
+	
+		
+	<div class="cabecera">
+		<div class="contenedor">
+			<!-- Sección dedicada al título de la página -->
+			<div class="columna col-4 titulo-cabecera">
+				<img src="../assets/img/bytecode-logo.png" alt="logotipo-bytecode"><br>
+				<h1>Periódico dígital ByteCode</h1>
+			</div>
+			<div class="columna col-8 logotipo">
+				<nav>
+		          	<ul class="menu-cabecera float-right">
+			            <li><a href="index.html">Home</a></li>
+			            <li><a href="autor.html">Autor</a></li>
+			            <li class="active"><a href="noticia-editar.html">Editar noticia</a></li>
+						<li><a href="noticia-crear.html">Crear noticia</a></li>
+			            <li><a href="login.html">Logout</a></li>
+		          	</ul>
+		        </nav>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contenedor">
+		<!-- Sección dedicada al cuerpo de la página -->
+		<div class="contenido m-t-40">
+
+			<!-- Administrador -->
+			<div class="col-12">
+				<div class="titulo-secundario">Editar Noticia <a href="noticia-crear.html" class="boton boton float-right">Crear nueva</a></div>
+				<hr>
+			</div>
+	
+			<!-- Crear Noticia -->
+			<div class="col-3">
+			</div>
+			<!-- Mostramos el autor con su imagen -->
+			<div class="col-6">
+				<form class="form-login editar-noticia">
+					<div class="caja-minuatura">
+						<!-- La imagen no levara file ya que se cambiara desde la propia imagen  -->
+						<div class="caja-autor">
+							<input type="text" name="titulo-noticia" class="form-inputs" value="Título de la noticia" placeholder="Título de la noticia">
+						</div>
+						<input type="file" name="imagen-noticia" class="form-inputs">
+				      	<img src="../assets/img/slider1.jpg" alt="imagen-noticia">
+				      	<div class="caja-autor">
+				        	<textarea name="conteindo-noticia" class="form-inputs" cols="30" rows="10" placeholder="Conteido de la noticia"></textarea>
+				        	<select name="categoria_id" class="form-inputs">
+				        		<option value="1">Categoría 1</option>
+				        		<option value="2">Categoría 2</option>
+				        		<option value="3">Categoría 3</option>
+				        		<option value="4">Categoría 4</option>
+				        		<option value="5">Categoría 5</option>
+				        	</select>
+				        	<a href="" class="boton boton-login">Crear Noticia</a>
+				      	</div>
+				    </div>
+			    </form>
+			</div>
+			<div class="col-4">
+			</div>
+
+
+		</div>
+	</div>
+
+
+	<!-- Añadimos el footer -->
+	<div class="footer">
+		<div class="contenedor">
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia de Creative Commons Reconocimiento-NoComercial 4.0 Internacional</a>.</p>
+		</div>
+	</div>
+		
+
+</body>
+</html>
